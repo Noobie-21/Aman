@@ -1,11 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital@1&family=Creepster&family=Lato:wght@400;700&family=Montserrat&family=Mulish:wght@900&family=REM&family=Roboto:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* --anton: 'Anton', sans-serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Creepster', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+--mulish: 'Mulish', sans-serif;
+font-family: 'REM', sans-serif;
+--roboto: 'Roboto', sans-serif; */
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --mulish: "Mulish", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --creep: "'Creepster' , sans-serif";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +38,60 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+mulish {
+  font-family: var(--mulish);
+}
+
+roboto {
+  font-family: var(--creep);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+    45deg,
+    #f472b6 0%,
+    rgb(134 239 172) 31%,
+    #fecaca 62%,
+    #ac5edd 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-position: -100%;
+  animation: animateGradient 2.5s infinite alternate-reverse;
+}
+.move-up-with-opacity {
+  animation: 1s 1.8s moveUpWithOpacity backwards;
+}
+
+@keyframes animateGradient {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
+@keyframes moveUpWithOpacity {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
