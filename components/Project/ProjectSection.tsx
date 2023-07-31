@@ -2,12 +2,17 @@ import React from "react";
 import ProjectCard from "./ProjectCard";
 import event from "@/assets/event.png";
 import reddit from "@/assets/reddit-clone.png";
+import Image from "next/image";
+import img2 from "@/assets/pngwing.com.png";
 
 type Props = {};
 
 const ProjectSection = (props: Props) => {
   return (
-    <div className="w-full h-full   mb-5 flex flex-col  gap-3" id="project">
+    <div
+      className="w-full h-full   mb-5 flex flex-col  gap-3 relative"
+      id="project"
+    >
       <ProjectCard
         value="md:flex-row"
         textAlign="md:text-right"

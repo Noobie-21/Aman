@@ -9,11 +9,11 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <div className="text-white w-full h-full p-2 relative ">
-      <div className="absolute  w-full   top-0 left-0 -z-20 opacity-10 ">
+      <div className="absolute  w-full h-fit   top-0 left-0 -z-20 opacity-10 ">
         <Image
           alt="bannerImage"
           src={img2}
-          className="animate-pulse w-full h-full"
+          className="animate-pulse w-full h-full bg-cover"
           objectFit="cover"
         />
       </div>

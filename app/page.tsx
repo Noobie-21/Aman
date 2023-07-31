@@ -6,7 +6,7 @@ import Contact from "@/components/contact/Contact";
 
 export default function Home() {
   return (
-    <div className="flex h-full w-full flex-col ">
+    <div className="flex h-full w-full flex-col overflow-hidden ">
       <Banner />
       <About />
       <ProjectSection />
