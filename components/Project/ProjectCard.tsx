@@ -34,7 +34,7 @@ const ProjectCard = ({
       <Link
         href={link}
         target="_blank"
-        className="h-full w-full p-2 border rounded-lg backdrop-blur-2xl border-slate-500"
+        className="h-full  w-full p-2 border rounded-lg backdrop-blur-2xl border-slate-500"
       >
         <div className="w-full h-fit  rounded-lg p-3">
           <Image
@@ -44,8 +44,8 @@ const ProjectCard = ({
           />
         </div>
       </Link>
-      <div className=" flex w-full h-screen justify-center items-center p-6">
-        <div className="flex flex-col justify-center items-center p-8">
+      <div className=" flex w-full md:h-screen h-full justify-center items-center md:p-6 p-2 gap-4 ">
+        <div className="flex flex-col justify-center items-center md:p-8 p-4">
           <div className="w-full ">
             <h1
               className={`text-[4rem]   w-full  text-center uppercase  ${textAlign} text-violet-500`}
@@ -53,7 +53,7 @@ const ProjectCard = ({
               {name}
             </h1>
           </div>
-          <div className="w-full h-36 rounded-md md:p-6 p-3 bg-slate-900 text-slate-400 font-roboto ">
+          <div className="w-full md:h-36 h-full rounded-md md:p-6 p-3 bg-slate-900 text-slate-400 font-roboto ">
             <h1 className="text-center">{details}</h1>
           </div>
           <div className={`w-full flex ${justifyValue} mt-4`}>

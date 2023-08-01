@@ -9,7 +9,7 @@ const About = () => {
       className="w-full h-screen flex relative px-12 justify-center items-center font-mulish"
       id="about"
     >
-      <div className="p-12 flex flex-col justify-center items-center ">
+      <div className="md:p-12 p-4 flex flex-col justify-center items-center ">
         <h1 className="text-7xl mb-5 font-bold   bg-gradient-to-r from-pink-400 via-green-300 to-red-200 text-transparent bg-clip-text   text-center">
           About me
         </h1>

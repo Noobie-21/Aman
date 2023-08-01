@@ -4,15 +4,20 @@ import Insta from "@/assets/insta.png";
 import Twitter from "@/assets/twiter.png";
 import Git from "@/assets/git.png";
 import Cutie from "@/assets/cutie.png";
-import Anime from "@/assets/anime.png";
 import Link from "next/link";
+import img2 from "@/assets/pngwing.com.png";
 
 const SocialSection = () => {
   return (
-    <div className=" w-full h-screen relative ">
-      {/* <div className="absolute  bottom-0 right-0 -z-20 opacity-60">
-        <Image alt="social" src={Anime} width={300} height={300} />
-      </div> */}
+    <div className=" w-full md:h-screen h-full relative ">
+      <div className="absolute  w-full h-fit   bottom-0 left-0 -z-20 opacity-10 rotate-180 ">
+        <Image
+          alt="bannerImage"
+          src={img2}
+          className="animate-pulse w-full h-full bg-cover"
+          objectFit="cover"
+        />
+      </div>
       <div className="   ">
         <h1 className=" bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400  text-transparent bg-clip-text text-center md:text-[10rem] text-[3rem]  font-mulish uppercase">
           Social <span className=" ">Media</span>{" "}

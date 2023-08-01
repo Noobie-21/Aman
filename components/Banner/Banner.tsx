@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import img2 from "@/assets/pngwing.com.png";
+
 import Noob from "@/assets/noob.png";
 import Bubble from "@/assets/bubble.png";
 import animeboy from "@/assets/animeboy.png";
@@ -8,18 +8,9 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="text-white w-full h-full p-2 relative ">
-      <div className="absolute  w-full h-fit   top-0 left-0 -z-20 opacity-10 ">
-        <Image
-          alt="bannerImage"
-          src={img2}
-          className="animate-pulse w-full h-full bg-cover"
-          objectFit="cover"
-        />
-      </div>
-
-      <div className="flex md:mx-12 mx-2 items-center justify-between relative ">
-        <div className="md:w-1/2 p-10  ">
+    <div className="text-white w-full h-full  p-2 relative ">
+      <div className="flex md:mx-12  items-center justify-between relative  ">
+        <div className="md:w-1/2 md:p-10 p-4  ">
           <h1 className=" w-full ">
             <span className="text-5xl  w-full  text-slate-300 opacity-30 bg-clip-text font-bold ">
               Aman Gupta

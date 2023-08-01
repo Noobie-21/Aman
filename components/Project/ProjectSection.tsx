@@ -10,7 +10,7 @@ type Props = {};
 const ProjectSection = (props: Props) => {
   return (
     <div
-      className="w-full h-full   mb-5 flex flex-col  gap-3 relative"
+      className="w-full h-full b  mb-5 flex flex-col  gap-3 relative"
       id="project"
     >
       <ProjectCard
